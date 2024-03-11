@@ -1,0 +1,100 @@
+2021-03-02 Maarten Brock <sourceforge.brock AT dse.nl>
+
+	* src/ds390/ralloc.c (isOperandInFarSpace2): fixed warning
+	* src/mcs51/peep.c (doPushScan): fixed warning
+
+2021-02-20 Erik Petrich <epetrich AT ivorytower.norman.ok.us>
+
+	* .version,
+	  doc/INSTALL.txt,
+	  sdcc.spec: Update version to 4.1.0 for release
+	* doc/sdccman.lyx: update to reflect Freescale/NXP merger
+
+2021-02-19 Philipp Klaus Krause <pkk AT spth.de>
+
+	* src/z80/gen.c,
+	  support/regression/tests/lonesha256.c:
+	  Fix gbz80 xor code generation bug #3181.
+
+2021-02-12 Sebastian 'basxto' Riedel <sdcc@basxto.de>
+
+	* support/makebin/makebin.c: Replace getline with fgetc
+
+2021-02-12 Sebastian 'basxto' Riedel <sdcc@basxto.de>
+
+	* support/makebin/makebin.c: Tone down filter of -yS
+
+2021-02-10 Sebastian 'basxto' Riedel <sdcc@basxto.de>
+
+	* support/makebin/makebin.c: Add patch #365 (-yS)
+
+2021-02-10 Sebastian 'basxto' Riedel <sdcc@basxto.de>
+
+	* support/makebin/makebin.c: Add patch #364 (-yp)
+
+2021-02-09 Philipp Klaus Krause <pkk AT spth.de>
+
+	* src/SDCCpeeph.c
+	  src/port.h
+	  src/z80/gen.c
+	  src/z80/peep.c
+	  src/z80/peep.h,
+	  support/regression/tests/bug-3178.c:
+	  Fix bug #3178.
+
+2021-02-09 Benedikt Freisen <b.freisen AT gmx.net>
+
+	* src/SDCCerr.c,
+	  src/SDCCerr.h,
+	  src/SDCCmain.c:
+	  Add language override option -x (feature request #667).
+
+2021-02-08 Sebastian 'basxto' Riedel <sdcc@basxto.de>
+
+	* src/SDCCpeeph.c: fix function names in error messages
+
+2021-02-08 Sebastian 'basxto' Riedel <sdcc@basxto.de>
+
+	* support/makebin/makebin.c: add patch #360
+
+2021-02-05 Erik Petrich <epetrich AT ivorytower.norman.ok.us>
+
+	* src/SDCCattr.c: fix include filename
+	* ChangeLog: it's no longer 2020
+
+2021-02-04 Philipp Klaus Krause <pkk AT spth.de>
+
+	* src/z80/gen.c:
+	  Make end-of-call stack adjustment tolerate return value in a.
+
+2021-02-03 Philipp Klaus Krause <pkk AT spth.de>
+
+	* src/z80/gen.c:
+	  Separate __z88dk_fastcall registers from return value registers.
+
+2021-02-03 Philipp Klaus Krause <pkk AT spth.de>
+
+	* src/z80/gen.c:
+	  Fix a bug in code generation for wide unary minus with upper operand word in hl.
+
+2021-02-03 Philipp Klaus Krause <pkk AT spth.de>
+
+	* src/z80/gen.c,
+	  src/z80/peep.c:
+	  Refactor handling of return value registers.
+
+2021-02-03 Philipp Klaus Krause <pkk AT spth.de>
+
+	* src/SDCCsymt.c:
+	  Fix printing of function with variable arguments (e.g. for debug dumps).
+	* src/z80/gen.c,
+	  src/stm8/gen.c:
+	  Refactor register asmop intialization.
+
+2021-02-02 Philipp Klaus Krause <pkk AT spth.de>
+
+	* src/SDCCattr.h,
+	  src/SDCCattr.c,
+	  src/SDCC.y,
+	  src/SDCCsymt.h,
+	  src/Makefile.in:
